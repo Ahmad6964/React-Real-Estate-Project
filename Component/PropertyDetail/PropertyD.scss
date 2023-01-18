@@ -1,0 +1,74 @@
+@import "../../App.scss";
+
+.propertydetail {
+  width: 100%;
+  padding-bottom: 50px;
+}
+.property-first {
+  a {
+    text-decoration: none;
+    color: grey;
+    font-size: 12px;
+  }
+  h3 {
+    font-size: $sub-hedding;
+    font-weight: bold;
+    padding-bottom: 20px;
+  }
+ 
+}
+
+.propertydetail-content-main {
+  display: flex;
+}
+.content-item {
+  display: flex;
+  div{
+    margin-right: 30px;
+  }
+  h6 {
+    font-size: $small-hedding;
+    font-weight: bold;
+  }
+ 
+}
+.frow {
+  display: flex;
+  justify-content: space-between;
+  h3 {
+    font-size: $child-para;
+    font-weight: bold;
+  }
+  h4 {
+    font-size: $mini-hedding;
+    font-weight: bold;
+    padding-bottom: 20px;
+    @media screen and (max-width:575px) {
+      padding: 0;
+      margin-top: 20px;
+    }
+  }
+  .form-check{
+    @media screen and (max-width:575px) {
+      position: absolute;
+      margin-left: 120px;
+    margin-top: -12px;
+    }
+  }
+}
+
+.srow {
+  ul {
+    list-style: none;
+    padding-top: 10px;
+    padding-left: 0px;
+    font-size: $list;
+  }
+}
+
+.link-div{
+a{
+  float: right;
+  color: $red;
+}
+}

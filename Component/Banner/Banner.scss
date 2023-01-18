@@ -1,0 +1,157 @@
+@import "../../App.scss";
+#main-banner {
+  padding-top: 220px;
+  padding-bottom: 110px;
+  width: 100%;
+  background-image: url(../../imges/banner.jpg);
+  background-size: cover;
+  background-position: top-center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  button {
+    width: 178px;
+    height: 40px;
+    background: transparent;
+    margin-right: 15px;
+    color: white;
+    border-color: white !important;
+    box-shadow: none;
+    text-transform: uppercase;
+  }
+  button:active {
+    background-color: $red;
+  }
+  @media screen and (max-width: 1024px) {
+    button {
+      width: 124px;
+    }
+  }
+  .from-feild {
+    display: flex;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.338);
+    padding: 10px;
+    input {
+      width: 60% !important;
+      height: 60px !important;
+      border-radius: 0 !important;
+    }
+    .small-input {
+      width: 25% !important;
+      height: 60px !important;
+      margin-right: 10px;
+    }
+    button {
+      width: 20% !important;
+      height: 60px;
+      background-color: $red;
+      border: 0;
+      border-radius: 0;
+      margin: 0;
+    }
+  }
+
+  .form-feild2 {
+    display: flex;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.367);
+    .small-input {
+      width: 25% !important;
+      height: 60px !important;
+      margin-right: 10px;
+    }
+  }
+  .form-feild3 {
+    display: flex;
+    padding: 10px;
+    padding-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.367);
+    p {
+      border-right: 2px solid black;
+      margin-right: 10px;
+      padding-right: 10px;
+      color: $grey !important;
+      text-decoration: none;
+      cursor: pointer;
+      svg {
+        font-size: 25px;
+      }
+    }
+  }
+  .right-side {
+    @media screen and (max-width: 800px) {
+      margin-top: 20px;
+    }
+    h4 {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      font-weight: bold;
+      justify-content: center;
+      padding: 10px;
+      background-color: $red;
+      margin: 0;
+      color: white;
+      height: 50px;
+      text-transform: uppercase;
+    }
+    button {
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      color: black;
+      height: 28px;
+      border: none;
+    }
+    .para {
+      background-color: rgba(0, 0, 0, 0.378);
+      width: 100%;
+      height: 170px;
+      overflow-y: scroll;
+      
+      p {
+        color: white;
+        margin: 0;
+        line-height: 2.5;
+        text-align: center;
+        span{
+          padding-right: 100px;
+        }
+      }
+    }
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .select-feild {
+    background-color: white;
+    width: 25%;
+    height: 60px;
+    margin-right: 10px;
+    p {
+      font-size: 16px;
+    }
+    svg {
+      margin-right: 10px;
+      margin-top: 5px;
+    }
+  }
+  .input-group {
+    width: 78% !important;
+  }
+  .arrow-div {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+  }
+  label {
+    font-size: $small-para;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+}
+

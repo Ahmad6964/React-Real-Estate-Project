@@ -1,0 +1,52 @@
+@import "../../App.scss";
+.main-footer {
+  width: 100%;
+  background-color: black;
+  overflow: hidden;
+  padding-bottom: 50px;
+  ul {
+    color: $grey;
+    list-style: none;
+    padding-top: 50px;
+    font-size: 14px;
+    padding-left: 0;
+    padding-bottom: 20px;
+    @media screen and (max-width:575px) {
+      padding-bottom: 0;
+      padding-top: 20px;
+    }
+  }
+  a {
+    cursor: pointer;
+    text-decoration: none;
+    color: $grey;
+    font-size: $child-para;
+  }
+  a:hover {
+    color: $red;
+  }
+  .icons {
+    img {
+      background-color: white;
+      width: 30px;
+      height: 30px;
+      border-radius: 50px;
+      padding: 5px;
+      margin-left: 8px;
+    }
+  }
+}
+
+.scol {
+  li {
+    margin-top: 10px;
+  }
+}
+
+.hrrow p {
+  color: $grey;
+}
+.icons {
+  justify-content: flex-end;
+}
+

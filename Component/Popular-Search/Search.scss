@@ -1,0 +1,17 @@
+@import "../../App.scss";
+.popular-search {
+  width: 100%;
+  padding-bottom: 160px;
+
+  h2 {
+    font-size: $child-hedding;
+    font-weight: bold;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+  }
+  ul {
+    list-style: none;
+    padding-left: 0px;
+    padding-top: 10px;
+  }
+}

@@ -1,0 +1,50 @@
+@import "../../App.scss";
+#site-header {
+  height: 70px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.395);
+  .navbar-nav a {
+    color: $light-grey !important;
+    font-size: 14px;
+    padding-right: 20px !important;
+    text-transform: uppercase;
+  }
+  .navbar-nav a .active {
+    text-decoration: underline;
+    text-decoration-color: $red;
+    text-decoration-thickness: 3px;
+  }
+  .btn1 {
+    width: 90px;
+    height: 40px;
+    background: transparent !important;
+    border: none !important;
+    font-size: $child-para !important;
+    margin-right: 20px;
+  }
+  .btn2 {
+    height: 40px;
+    width: 90px;
+    background: transparent !important;
+    border: 1px solid $light-grey !important;
+    text-align: center !important;
+    padding: 5px 20px 5px 20px !important;
+    font-size: 14px !important;
+  }
+  // .show {
+  //   background-color: black;
+  //   margin-top: 22px;
+  //   padding-bottom: 20px;
+  //   padding-top: 10px;
+  // }
+}
+
+
+@media screen and (max-width: 800px) {
+  .header-btn Button {
+    display: none;
+  }
+  .header-container button {
+    padding: 0px;
+  }
+}

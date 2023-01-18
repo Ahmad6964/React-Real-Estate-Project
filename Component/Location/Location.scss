@@ -1,0 +1,58 @@
+@import "../../App.scss";
+.main-location {
+  width: 100%;
+  background-color: #ebebeb;
+  overflow: hidden;
+  padding-bottom: 190px;
+  padding-top: 90px;
+  h1 {
+    font-size: $main-hedding;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 0.5;
+    margin: 0;
+  }
+  h1::before {
+    content: "";
+    height: 35px;
+    width: 7px;
+    background: red;
+    float: left;
+    margin-right: 10px;
+    border-radius: 3px;
+    margin-top: -5px;
+    @media screen and (max-width: 800px) {
+      height: 30px;
+    }
+  }
+  h4 {
+    font-size: $child-hedding;
+    padding-top: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  h6 {
+    font-size: $mini-hedding;
+    font-weight: bold;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    line-height: 1.5;
+  }
+  p {
+    font-size: $child-para;
+    font-weight: 400;
+    line-height: 0.5;
+  }
+  a {
+    text-decoration: none;
+    color: $red;
+    font-size: $link-size;
+    font-weight: 400;
+  }
+}
+
+#hidden-text {
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
+}

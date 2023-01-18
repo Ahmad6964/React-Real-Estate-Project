@@ -1,0 +1,45 @@
+@import "../../App.scss";
+.main-agency {
+  padding-bottom: 50px;
+  overflow: hidden;
+  padding-top: 70px;
+  h1 {
+    font-size: $child-hedding;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left !important;
+    padding-bottom: 50px;
+
+    h1 {
+      @media screen and (max-width: 575px) {
+        text-align: center;
+      }
+    }
+  }
+  h1::before {
+    content: "";
+    height: 30px;
+    width: 7px;
+    background: red;
+    float: left;
+    margin-right: 10px;
+    border-radius: 3px;
+    
+  }
+  img {
+    border: 1px solid $grey;
+    margin-right: 7px;
+    margin-top: 10px;
+    width: 178px;
+  }
+  img {
+    @media screen and (max-width: 575px) {
+      text-align: center;
+    }
+  }
+  img{
+    @media screen and (max-width:1024px) {
+      width: 126px;
+    }
+  }
+}

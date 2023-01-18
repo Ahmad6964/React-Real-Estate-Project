@@ -1,0 +1,42 @@
+@import "../../App.scss";
+.innerbanner {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 30px;
+  background-image: url(../../imges/banner.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .small{
+    height: 60px;
+    width : 40% !important;
+    border-radius: 2%;
+  
+  }
+  .med1{
+    width: 58% !important;
+    height: 60px;
+    border-radius: 2%;
+  }
+  .med{
+    height: 60px;
+    width : 49% !important;
+    border-radius: 2%;
+    @media screen and (max-width:800px) {
+      margin-top: 10px;
+    }
+  }
+  .large{
+    width: 100% !important;
+    height: 60px;
+    border-radius: 2%;
+    @media screen and (max-width:800px) {
+      margin-top: 10px;
+    }
+  }
+  .upper{
+    background-color: rgba(0, 0, 0, 0.346);
+    padding: 10px;
+  }
+}
+

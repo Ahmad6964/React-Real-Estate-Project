@@ -1,0 +1,26 @@
+@import "../../App.scss";
+.similar-card {
+    padding-bottom: 50px;
+    padding-top: 20px;
+  span {
+    margin-left: 10px;
+    img {
+      width: 10%;
+      color: $grey;
+      padding-right: 10px;
+    }
+  }
+  Button {
+    margin-right: 10px;
+    width: 110px !important;
+  }
+  h1{
+    font-size: $main-hedding;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom:  20px;
+  }
+}
+
+

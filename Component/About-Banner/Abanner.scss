@@ -1,0 +1,50 @@
+@import "../../App.scss";
+.main-hero {
+  background-image: url(../../imges/banner-about.jpg);
+  width: 100%;
+  background-position: top;
+  background-size: cover;
+  padding-top: 240px;
+  padding-bottom: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    color: white;
+    font-size: $Banner-hedding;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+.main-textarea {
+  width: 100%;
+  padding-bottom: 215px;
+  padding-top: 80px;
+
+  @media screen and (max-width : 575px) {
+    padding-bottom: 50px;
+  }
+  h2 {
+    font-size: $main-hedding;
+    font-weight: bold;
+  }
+  h2::before {
+    content: "";
+    height: 35px;
+    width: 7px;
+    background: red;
+    float: left;
+    margin-right: 10px;
+    border-radius: 3px;
+    margin-top: 2px;
+    @media screen and (max-width : 768px) {
+      height: 30px;
+      margin-top: 0;
+    }
+  }
+  p {
+    font-size: $child-para;
+    margin-top: 25px;
+    font-weight: 400;
+  }
+}

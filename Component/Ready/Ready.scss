@@ -1,0 +1,84 @@
+@import "../../App.scss";
+.main-ready {
+  width: 100%;
+  background-image: url(../../imges/red.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .content {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    h1 {
+      font-size: $main-hedding;
+      font-weight: bold;
+      color: white;
+    }
+    p {
+      font-size: $child-para;
+      width: 60%;
+      margin-top: 5px;
+      padding-top: 10px;
+      color: white;
+    }
+    img {
+      width: 150px;
+      margin-right: 5px;
+      margin-top: 10px;
+      padding-top: 10px;
+    }
+  }
+
+  .ready-img {
+    margin-top: -77px;
+    img {
+      float: right;
+    }
+  }
+  .ready-content {
+    display: flex;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 575px) {
+    .ready-img {
+      display: none;
+    }
+    .content h1 {
+      align-items: center;
+    }
+    .content p {
+      margin: auto;
+    }
+    .content {
+      text-align: center;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .ready-row {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    .ready-content {
+      width: 100%;
+    }
+    .content h1 {
+      align-items: center;
+    }
+    .content p {
+      margin: auto;
+    }
+    .content {
+      text-align: center;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      width: 100%;
+    }
+    .ready-img {
+      img {
+        float: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,121 @@
+@import "../../App.scss";
+.carddetail {
+  background-color: #ebebeb;
+  width: 100%;
+  padding-bottom: 160px;
+  padding-top: 20px;
+  @media screen and (max-width : 575px ) {
+    padding-bottom: 50px;
+  }
+  .form-feild{
+    display: flex;
+    justify-content: space-between;
+    .sub-feild{
+      display: flex;
+      align-items: center;
+      padding-bottom: 10px;
+    }
+    p{
+      font-size: 16px;
+      margin-bottom: 0;
+    }
+    select{
+      width: 175px;
+      height: 30px;
+      margin-left: 20px;
+      align-items: center;
+    }
+    img{
+      width: 30px;
+      margin-left: 10px;
+      @media screen and (max-width:800px) {
+        display: none;
+      }
+    }
+  }
+
+}
+.main-card {
+  background-color: white;
+  margin-bottom: 10px;
+  padding-left: 0 !important;
+}
+.card-content {
+  padding: 10px;
+  img {
+    width: 100%;
+    height: auto;
+  }
+  h5 {
+    font-size: $child-hedding;
+    font-weight: bold;
+    margin: 0px;
+    text-transform: uppercase;
+    @media screen and (max-width:575px) {
+      padding-top: 10px;
+    }
+  }
+  h6 {
+    font-size: $mini-hedding;
+    font-weight: bold;
+  }
+  p {
+    font-size: $child-para;
+    font-weight: 400;
+    margin: 5px;
+    padding: 0% !important;
+  }
+  button {
+    margin-top: 10px;
+    width: 100px;
+    margin-right: 10px;
+  }
+  span img {
+    width: 22px;
+    padding-right: 5px;
+  }
+}
+
+.icons {
+  display: flex;
+  img {
+    border-radius: 0;
+    margin: 0;
+    width: 30px;
+    margin-left: 10px !important;
+  }
+}
+
+.rooms-icon {
+  display: flex;
+  p {
+    padding-right: 15px;
+  }
+}
+.housepic {
+  width: 80px;
+  height: 100px;
+  float: right;
+  @media screen and (max-width:900px) {
+    display: none;
+  }
+}
+.housepic-col {
+  padding-top: 5px;
+}
+.btn-col {
+  padding-top: 27px;
+  @media screen and (max-width:900px) {
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .icons img {
+    display: none;
+  }
+  .housepic {
+    display: none;
+  }
+      
+}
